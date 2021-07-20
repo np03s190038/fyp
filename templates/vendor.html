@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<title>VENDOR DASHBOARD</title>
+
+<br>
+<br>
+<div class="container">
+<h1>VENDOR DASHBOARD</h1>
+
+<span class="hello-msg">Hello, {{request.user}}</span>
+<span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+<br><br>
+<div>
+<button class="btn btn-primary"><a style="color: aliceblue;" href="{% url 'addBusiness' %}">List Business</a></button>
+</div>
+
+</div>
+
+<br>
+<br>
+
+
+
+
+
+{% endblock content%}
+
+{% include 'footer.html' %}
